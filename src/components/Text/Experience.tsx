@@ -37,13 +37,13 @@ const styles = {
 
 function Experience({title, subtitle, description} : Props) {
   return (
-    <Box style={styles.container}>
-      <Box style={styles.left}>
-        <Typography style={styles.txtTitle}>{title}</Typography>
-        <Typography style={styles.txtSubtitle}>{subtitle}</Typography>
+    <Box sx={styles.container}>
+      <Box sx={styles.left}>
+        <Typography sx={styles.txtTitle}>{title}</Typography>
+        <Typography sx={styles.txtSubtitle}>{subtitle}</Typography>
       </Box>
-      <Box style={styles.right}>
-        <Typography style={styles.txtDescription}>{description}</Typography>
+      <Box sx={styles.right}>
+        <Typography sx={styles.txtDescription}>{description}</Typography>
       </Box>
     </Box>
   )

@@ -7,6 +7,9 @@ import TextBanner from "./components/TextBanner/TextBanner";
 import {Typography} from "@mui/material";
 import {Section, SectionElement} from "./components/Section/Section";
 import Experience from "./components/Text/Experience";
+import Home from "./containers/home/Home";
+import Education from "./containers/education/Education";
+import Skills from "./containers/skills/Skills";
 
 function App() {
   return (
@@ -18,23 +21,14 @@ function App() {
         onSelect={(f) => console.log("clicked", f)}
       />
 
+      <Home/>
 
-      <TextBanner
-        imgData= {{imgUrl: "https://zilius-serv.com/template/assets/images/background_lg.jpg", width:'100%', height:'400px'}}
-        title="Hi There! I’m Hamza HATHOUTE"
-        description="Welcome to my personal website."
-        color="white"
-      />
+      <Education/>
+
+      <Skills/>
 
       <Section
         color='blue'>
-        <SectionElement>
-          <TextBanner
-          imgData= {{imgUrl: "https://zilius-serv.com/template/assets/images/background_lg.jpg", width:'100%', height:'200px'}}
-          title="This is the Title"
-          description="What a cool description :D"
-          color="white" />
-        </SectionElement>
         <SectionElement>
           <Experience
             title="ENSEEIHT Toulouse"

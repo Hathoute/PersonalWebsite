@@ -12,14 +12,13 @@ const styles = {
     return {
       display: 'flex',
       flexDirection: 'row' as 'row',
-      justifyContent: 'center',
-      alignItems: 'center',
       backgroundColor: color,
     };
   },
   element: {
     flexGrow: 1,
     flexBasis: 0,
+    minHeight: '100%',
   },
 };
 
