@@ -5,6 +5,7 @@ import {Box, Button, Divider, Typography} from "@mui/material";
 import Project from "../../components/Text/Project";
 import {Link} from "react-router-dom";
 import {getProjects, ProjectData} from "../../utils/DataManager";
+import Lang from "../../components/Lang/Lang";
 
 interface Props {
   expanded: boolean;
@@ -40,10 +41,10 @@ function Projects({expanded} : Props) {
   return (
     <div style={styles.pageContainer}>
       <Box sx={styles.titleContainer}>
-        <Typography sx={styles.title}>Project Showcase</Typography>
+        <Typography sx={styles.title}><Lang identifier="projects.title"/></Typography>
       </Box>
 
-      <Typography sx={styles.subTitle}>Featured Projects:</Typography>
+      <Typography sx={styles.subTitle}><Lang identifier="projects.featured"/></Typography>
 
       {projects.featured.map((p, i) => {
         return (
@@ -61,7 +62,7 @@ function Projects({expanded} : Props) {
 
       { !expanded &&
           <Button variant='outlined' component={Link} to="/projects">
-              View all projects
+              <Lang identifier="common.view_all"/>
           </Button>
       ||
         <ExpandedProjects projects={projects.remaining}/>

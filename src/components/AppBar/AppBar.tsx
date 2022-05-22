@@ -3,6 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import Typography from '@mui/material/Typography';
 import {Box, Button, Container, createTheme, Toolbar} from '@mui/material';
 import {Link} from "react-router-dom";
+import Lang from "../Lang/Lang";
 
 interface TabData {
   name: string,
@@ -34,7 +35,7 @@ function MyAppBar({ tabs } : Props) {
               component={Link}
               to={tab.url}
             >
-              {tab.name}
+              <Lang identifier={tab.name}/>
             </Button>
           ))}
         </Box>

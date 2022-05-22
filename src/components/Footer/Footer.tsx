@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {Box, Container, Typography} from "@mui/material";
 import {createDecoratedLinkFromTool, createIconLink} from "../../utils/ComponentFactory";
+import Lang from "../Lang/Lang";
 
 const styles = {
   box: {
@@ -33,7 +34,7 @@ function Footer() {
       <Container style={styles.container}>
         <Box style={styles.left}>
           <Typography component='span' style={styles.text}>
-            Built using {createDecoratedLinkFromTool('react', 17)}
+            <Lang identifier="footer"/>
           </Typography>
         </Box>
         <Box style={styles.right}>

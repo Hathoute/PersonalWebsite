@@ -1,4 +1,4 @@
-import {getJSON} from "./ResourcesManager";
+import {getDataJSON} from "./ResourcesManager";
 import {registerIcon} from "./ComponentFactory";
 
 
@@ -17,7 +17,7 @@ interface Projects {
 let cachedProjects : Projects | undefined = undefined;
 export function getProjects() : Projects {
   if(cachedProjects === undefined) {
-    cachedProjects = getJSON('projects.json');
+    cachedProjects = getDataJSON('projects.json');
   }
 
   return cachedProjects!;
@@ -34,7 +34,7 @@ let cachedTools : ToolData[] | undefined = undefined;
 let toolsByIdentifier : Object | undefined = undefined;
 export function getTools() : ToolData[] {
   if (cachedTools === undefined) {
-    cachedTools = getJSON('tools.json');
+    cachedTools = getDataJSON('tools.json');
   }
 
   return cachedTools!;

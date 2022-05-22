@@ -2,6 +2,7 @@ import * as React from "react"
 import TextBanner from "../../components/TextBanner/TextBanner";
 import Experience from "../../components/Text/Experience";
 import {Box, Divider, Typography} from "@mui/material";
+import Lang from "../../components/Lang/Lang";
 
 const styles = {
   pageContainer: {
@@ -26,27 +27,27 @@ function Education() {
   return (
     <div style={styles.pageContainer}>
       <Box sx={styles.titleContainer}>
-        <Typography sx={styles.title}>Academics</Typography>
+        <Typography sx={styles.title}><Lang identifier="academics.title"/></Typography>
       </Box>
 
       <Experience
-        title="ENSEEIHT Toulouse"
-        subtitle="September 2020 - Now"
-        description="After the two-years in CPGE, I was admitted into ENSEEIHT's numerical science department." />
+        title="academics.enseeiht.name"
+        subtitle="academics.enseeiht.period"
+        description="academics.enseeiht.desc" />
 
       <div style={styles.divider}></div>
 
       <Experience
-        title="CPGE Moulay Youssef"
-        subtitle="September 2018 - June 2020"
-        description="I chose to complete my studies in CPGE, since it was the only gateway to a good university in the field of Computer science." />
+        title="academics.cpge.name"
+        subtitle="academics.cpge.period"
+        description="academics.cpge.desc" />
 
       <div style={styles.divider}></div>
 
       <Experience
-        title="Al Imaniat School"
-        subtitle="September 2015 - June 2018"
-        description="I got my bachelor degree in the field of Math science, in Morocco." />
+        title="academics.bac.name"
+        subtitle="academics.bac.period"
+        description="academics.bac.desc" />
 
       <div style={styles.divider}></div>
     </div>

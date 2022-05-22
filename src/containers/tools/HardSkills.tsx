@@ -7,6 +7,7 @@ import {Link} from "react-router-dom";
 import {getOrderedToolUsage, ProjectData, ToolUsage} from "../../utils/DataManager";
 import Skill from "../../components/Text/Skill";
 import {Section, SectionElement} from "../../components/Section/Section";
+import Lang from "../../components/Lang/Lang";
 
 interface Props {
   expanded: boolean;
@@ -51,10 +52,10 @@ function HardSkills({expanded} : Props) {
   return (
     <div style={styles.pageContainer}>
       <Box sx={styles.titleContainer}>
-        <Typography sx={styles.title}>Hard skills</Typography>
+        <Typography sx={styles.title}><Lang identifier="tools.title"/></Typography>
       </Box>
 
-      {!expanded && <Typography sx={styles.subTitle}>Most used:</Typography>}
+      {!expanded && <Typography sx={styles.subTitle}><Lang identifier="tools.most_used"/></Typography>}
 
       <Section color='black'>
         <SectionElement>
@@ -88,7 +89,7 @@ function HardSkills({expanded} : Props) {
 
       { !expanded &&
           <Button variant='outlined' component={Link} to="/tools">
-              View all tools
+              <Lang identifier="common.view_all"/>
           </Button>
       }
 

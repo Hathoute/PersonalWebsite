@@ -1,5 +1,6 @@
 import * as React from 'react'
 import {Box, Typography} from "@mui/material";
+import Lang from "../Lang/Lang";
 
 interface Props {
   title: string,
@@ -39,11 +40,11 @@ function Experience({title, subtitle, description} : Props) {
   return (
     <Box sx={styles.container}>
       <Box sx={styles.left}>
-        <Typography sx={styles.txtTitle}>{title}</Typography>
-        <Typography sx={styles.txtSubtitle}>{subtitle}</Typography>
+        <Typography sx={styles.txtTitle}><Lang identifier={title}/></Typography>
+        <Typography sx={styles.txtSubtitle}><Lang identifier={subtitle}/></Typography>
       </Box>
       <Box sx={styles.right}>
-        <Typography sx={styles.txtDescription}>{description}</Typography>
+        <Typography sx={styles.txtDescription}><Lang identifier={description}/></Typography>
       </Box>
     </Box>
   )

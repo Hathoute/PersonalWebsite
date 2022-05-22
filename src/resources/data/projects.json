@@ -1,64 +1,64 @@
 {
   "featured": [
     {
-      "title": "Ringtone Manager",
+      "title": "projects.ringtone_manager.title",
       "tools": "java,android-studio,sqlite",
-      "description": "My first Android app which manages ringtones with features like cropping, shuffling, etc",
+      "description": "projects.ringtone_manager.desc",
       "external": {
         "iconId": "googleplay",
-        "name": "Google Play",
+        "name": "common.googleplay",
         "url": "https://play.google.com/store/apps/details?id=com.hathoute.ringtonemanager.lite"
       }
     },
     {
-      "title": "Wallpapers",
+      "title": "projects.wallpapers.title",
       "tools": "java,android-studio,php,phpstorm,mysql",
-      "description": "An Android app that downloads wallpapers from a remote server.",
+      "description": "projects.wallpapers.desc",
       "external": {
         "iconId": "github",
-        "name": "Github",
+        "name": "common.github",
         "url": "https://github.com/Hathoute/Wallpapers"
       }
     },
     {
-      "title": "Wallpapers",
+      "title": "projects.wallpapers.title",
       "tools": "java,android-studio,php,phpstorm,mysql",
-      "description": "An Android app that downloads wallpapers from a remote server.",
+      "description": "projects.wallpapers.desc",
       "external": {
         "iconId": "github",
-        "name": "Github",
+        "name": "common.github",
         "url": "https://github.com/Hathoute/Wallpapers"
       }
     }
   ],
   "remaining": [
     {
-      "title": "Wallpapers",
+      "title": "projects.wallpapers.title",
       "tools": "java,android-studio,php,phpstorm,mysql",
-      "description": "An Android app that downloads wallpapers from a remote server.",
+      "description": "projects.wallpapers.desc",
       "external": {
         "iconId": "github",
-        "name": "Github",
+        "name": "common.github",
         "url": "https://github.com/Hathoute/Wallpapers"
       }
     },
     {
-      "title": "Wallpapers",
+      "title": "projects.wallpapers.title",
       "tools": "java,android-studio,php,phpstorm,mysql",
-      "description": "An Android app that downloads wallpapers from a remote server.",
+      "description": "projects.wallpapers.desc",
       "external": {
         "iconId": "github",
-        "name": "Github",
+        "name": "common.github",
         "url": "https://github.com/Hathoute/Wallpapers"
       }
     },
     {
-      "title": "Wallpapers",
+      "title": "projects.wallpapers.title",
       "tools": "java,android-studio,php,phpstorm,mysql",
-      "description": "An Android app that downloads wallpapers from a remote server.",
+      "description": "projects.wallpapers.desc",
       "external": {
         "iconId": "github",
-        "name": "Github",
+        "name": "common.github",
         "url": "https://github.com/Hathoute/Wallpapers"
       }
     }

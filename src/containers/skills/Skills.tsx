@@ -3,6 +3,7 @@ import TextBanner from "../../components/TextBanner/TextBanner";
 import Experience from "../../components/Text/Experience";
 import {Box, Divider, Typography} from "@mui/material";
 import {Section, SectionElement} from "../../components/Section/Section";
+import Lang from "../../components/Lang/Lang";
 
 const laptop = require('../../resources/images/laptop.jpg');
 const phone = require('../../resources/images/phone.jpg');
@@ -58,8 +59,8 @@ function Skills() {
   return (
     <div style={styles.pageContainer}>
       <Box sx={styles.titleContainer}>
-        <Typography sx={styles.title}>Skills</Typography>
-        <Typography sx={styles.desc}>Software development</Typography>
+        <Typography sx={styles.title}><Lang identifier="skills.title"/></Typography>
+        <Typography sx={styles.desc}><Lang identifier="skills.subtitle"/></Typography>
       </Box>
 
       <Section color={styles.pageContainer.backgroundColor}>
@@ -68,8 +69,8 @@ function Skills() {
         </SectionElement>
         <SectionElement>
           <Box sx={styles.sectionContainer}>
-            <Typography sx={styles.sectionTitle}>Desktop Development</Typography>
-            <Typography sx={styles.sectionDesc}>I developed many softwares for the Windows plateform using languages such as C#, Python, C++ and with frameworks like .NET and Qt5.</Typography>
+            <Typography sx={styles.sectionTitle}><Lang identifier="skills.desktop.title"/></Typography>
+            <Typography sx={styles.sectionDesc}><Lang identifier="skills.desktop.desc"/></Typography>
           </Box>
         </SectionElement>
       </Section>
@@ -77,8 +78,8 @@ function Skills() {
       <Section color={styles.pageContainer.backgroundColor}>
         <SectionElement>
           <Box sx={styles.sectionContainer}>
-            <Typography sx={styles.sectionTitle}>Mobile Development</Typography>
-            <Typography sx={styles.sectionDesc}>Using Java as the main language, I created good looking and lightweight mobile apps for the Android platform.</Typography>
+            <Typography sx={styles.sectionTitle}><Lang identifier="skills.mobile.title"/></Typography>
+            <Typography sx={styles.sectionDesc}><Lang identifier="skills.mobile.desc"/></Typography>
           </Box>
         </SectionElement>
         <SectionElement>

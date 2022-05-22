@@ -1,0 +1,79 @@
+{
+  "navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "tools": "Tools",
+    "about": "About"
+  },
+  "home": {
+    "hi_there": "Hi There! I’m Hamza HATHOUTE",
+    "welcome_website": "Welcome to my personal website."
+  },
+  "academics": {
+    "title": "Academics",
+    "enseeiht": {
+      "name": "ENSEEIHT Toulouse",
+      "period": "September 2020 - Now",
+      "desc": "After the two-years in CPGE, I was admitted into ENSEEIHT's numerical science department."
+    },
+    "cpge": {
+      "name": "CPGE Moulay Youssef",
+      "period": "September 2018 - June 2020",
+      "desc": "I chose to complete my studies in CPGE, since it was the only gateway to a good university in the field of Computer science."
+    },
+    "bac": {
+      "name": "Al Imaniat School",
+      "period": "September 2015 - June 2018",
+      "desc": "I got my bachelor degree in the field of Math science, in Morocco."
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Software development",
+    "desktop": {
+      "title": "Desktop Development",
+      "desc": "I developed many softwares for the Windows plateform using languages such as C#, Python, C++ and with frameworks like .NET and Qt5."
+    },
+    "mobile": {
+      "title": "Mobile Development",
+      "desc": "Using Java as the main language, I created good looking and lightweight mobile apps for the Android platform."
+    }
+  },
+  "projects": {
+    "title": "Project Showcase",
+    "featured": "Featured Projects:",
+    "ringtone_manager": {
+      "title": "Ringtone Manager",
+      "desc": "My first Android app which manages ringtones with features like cropping, shuffling, etc"
+    },
+    "wallpapers": {
+      "title": "Wallpapers",
+      "desc": "An Android app that downloads wallpapers from a remote server"
+    }
+  },
+  "tools": {
+    "title": "Hard skills",
+    "most_used": "Most used:",
+    "used_in": "Used in"
+  },
+  "about": {
+    "title": "About",
+    "me": {
+      "title": "Me",
+      "content": "My name is Hamza Hathoute, 22 years old and I am a student pursuing an engineering degree in software development.\nMy birth town is Agadir - Morocco, but currently living in Toulouse - France.\nI started programming from a young age, basically creating mods for Counter-Strike using #url{AMXX,https://www.amxmodx.org/} and #url{SourceMod,https://www.sourcemod.net/}."
+    },
+    "website": {
+      "title": "This Website",
+      "content": "This website was built in May 2022.\nThe sole reason for building this website was to learn #tool{react,17} and get familiar with fullstack development, since I was looking for an internship and I could only find web development internships."
+    }
+  },
+  "footer": "Built using #tool{react,20}",
+  "common": {
+    "github": "Github",
+    "googleplay": "Google Play",
+    "more": "More",
+    "less": "Less",
+    "view_all": "View all"
+  }
+
+}

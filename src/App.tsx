@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import AppBar from './components/AppBar/AppBar';
@@ -16,13 +16,14 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import HardSkills from "./containers/tools/HardSkills";
 import {initDataManager} from "./utils/DataManager";
 import About from "./containers/about/About";
+import {getString, initializeLang} from "./utils/LangsManager";
 
 
-const NavTabs = [
-  {name: 'Home', url: '/'},
-  {name: 'Projects', url: '/projects'},
-  {name: 'Tools', url: '/tools'},
-  {name: 'About', url: '/about'},
+const NavTabs = () => [
+  {name: 'navbar.home', url: '/'},
+  {name: 'navbar.projects', url: '/projects'},
+  {name: 'navbar.tools', url: '/tools'},
+  {name: 'navbar.about', url: '/about'},
 ]
 
 const Root = [
@@ -44,6 +45,9 @@ let initialized = false;
 
 function App() {
 
+  let [currentLang, setCurrentLang] = useState('en');
+  initializeLang(currentLang, setCurrentLang);
+
   if(!initialized) {
     initDataManager();
     initialized = true;
@@ -54,7 +58,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <BrowserRouter>
         <AppBar
-          tabs={NavTabs}
+          tabs={NavTabs()}
         />
 
         <Container maxWidth="xl">

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {Box, Paper, Typography} from "@mui/material";
+import Lang from "../Lang/Lang";
 
 interface ImgData {
   imgUrl: string,
@@ -53,10 +54,10 @@ function TextBanner({imgData, bgColor, title, color, description} : Props) {
   return (
     <Box style={styles.boxContainer(imgData, bgColor)}>
       <Typography style={styles.title(color)}>
-        {title}
+        <Lang identifier={title}/>
       </Typography>
       <Typography style={styles.description(color)}>
-        {description}
+        <Lang identifier={description}/>
       </Typography>
     </Box>
   )

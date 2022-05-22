@@ -3,6 +3,7 @@ import {Box, Button, Link, Typography} from "@mui/material";
 import {createDecoratedLink} from "../../utils/ComponentFactory";
 import {getToolData, ProjectData, ToolUsage} from "../../utils/DataManager";
 import {useState} from "react";
+import Lang from "../Lang/Lang";
 
 
 const styles = {
@@ -51,19 +52,19 @@ function Skill({usage} : Props) {
           usage.data.homeUrl
         )}
       </Box>
-      <Typography sx={styles.subtitle}>Used in</Typography>
+      <Typography sx={styles.subtitle}><Lang identifier="tools.used_in"/></Typography>
 
       <Box sx={styles.projectsContainer}>
         {displayedProjects.map((p,i) => {
-          return <Typography key={i} sx={styles.project}>{p.title}</Typography>
+          return <Typography key={i} sx={styles.project}><Lang identifier={p.title}/></Typography>
         })}
         {otherProjects.length > 0 && (!expanded &&
-            <Button variant="text" component={Link} sx={styles.button} onClick={() => setExpanded(true)}>More</Button>
+            <Button variant="text" component={Link} sx={styles.button} onClick={() => setExpanded(true)}><Lang identifier="common.more"/></Button>
           ||
             <>{otherProjects.map((p,i) => {
-              return <Typography key={i} sx={styles.project}>{p.title}</Typography>
+              return <Typography key={i} sx={styles.project}><Lang identifier={p.title}/></Typography>
             })}
-                <Button variant="text" component={Link} sx={styles.button} onClick={() => setExpanded(false)}>Less</Button>
+                <Button variant="text" component={Link} sx={styles.button} onClick={() => setExpanded(false)}><Lang identifier="common.less"/></Button>
             </>
         )}
       </Box>

@@ -1,5 +1,6 @@
 import {Box, Typography} from "@mui/material";
 import {getToolData} from "./DataManager";
+import {getString} from "./LangsManager";
 
 interface IconProvider {
   generate(size:number) : any;
@@ -116,4 +117,51 @@ export function createIconLink(iconId: string, size: number, url: string) {
       {provider.generate(size)}
     </Box>
   )
+}
+
+export function createLang(langId: string) {
+  const str = getString(langId);
+  const regex = /(\#(\w+)\{(.+?)\})|(\\n)|(.+?)/g;
+  let rawComponents: Array<Object> = [""];
+
+  let m;
+  do {
+    m = regex.exec(str);
+    if (m) {
+      if(m[5] !== undefined) {
+        // Character match
+        rawComponents.push(rawComponents.pop() + m[5])
+      }
+      else if(m[1] !== undefined) {
+        // Custom component
+        const params = m[3].split(',');
+        switch (m[2]) {
+          case "tool":
+            rawComponents.push(createDecoratedLinkFromTool(params[0], Number.parseInt(params[1])))
+            break;
+          case "url":
+            rawComponents.push(<a href={params[1]}>{params[0]}</a>);
+            break;
+        }
+        rawComponents.push("");
+      }
+      else if(m[4] !== undefined) {
+        // NewLine
+        rawComponents.push(<br/>);
+        rawComponents.push("");
+      }
+    }
+  } while (m);
+
+  return <span>
+  {rawComponents.map((raw, i) => {
+    if (raw !== Object(raw)) {
+      if(raw !== "")
+        return <span>{raw as unknown as string}</span>;
+    }
+    else {
+        return raw as unknown as JSX.Element;
+    }
+  })}
+  </span>
 }

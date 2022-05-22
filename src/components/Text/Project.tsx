@@ -2,6 +2,8 @@ import * as React from 'react'
 import {Box, Link, Typography} from "@mui/material";
 import {getToolData, ProjectData} from "../../utils/DataManager";
 import {createDecoratedLink} from "../../utils/ComponentFactory";
+import Lang from "../Lang/Lang";
+import {getString} from "../../utils/LangsManager";
 
 
 const styles = {
@@ -45,7 +47,7 @@ function Project({title, tools, description, external} : ProjectData) {
   return (
     <Box sx={styles.container}>
       <Box sx={styles.left}>
-        <Typography sx={styles.txtTitle}>{title}</Typography>
+        <Typography sx={styles.txtTitle}><Lang identifier={title}/></Typography>
         <Box sx={styles.txtTools}>
           {toolsData.map((t, ind) => {
             return [<Link key={t.identifier} href={t.homeUrl}>{t.fullName}</Link>, (ind === toolsData.length - 1) ? "" : ", "];
@@ -53,12 +55,12 @@ function Project({title, tools, description, external} : ProjectData) {
         </Box>
           {external !== undefined &&
               <Box sx={styles.linkContainer}>
-                {createDecoratedLink(external.iconId, external.name, 18, external.url)}
+                {createDecoratedLink(external.iconId, getString(external.name), 18, external.url)}
               </Box>
           }
       </Box>
       <Box sx={styles.right}>
-        <Typography sx={styles.txtDescription}>{description}</Typography>
+        <Typography sx={styles.txtDescription}><Lang identifier={description}/></Typography>
       </Box>
     </Box>
   )
