@@ -4,7 +4,7 @@ import TextBanner from "../../components/TextBanner/TextBanner";
 
 function Home() {
 
-    let url = require('../../ressources/images/code_background.jpg');
+    let url = require('../../resources/images/code_background.jpg');
 
     return (
       <TextBanner

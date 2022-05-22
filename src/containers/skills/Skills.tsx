@@ -4,8 +4,8 @@ import Experience from "../../components/Text/Experience";
 import {Box, Divider, Typography} from "@mui/material";
 import {Section, SectionElement} from "../../components/Section/Section";
 
-const laptop = require('../../ressources/images/laptop.jpg');
-const phone = require('../../ressources/images/phone.jpg');
+const laptop = require('../../resources/images/laptop.jpg');
+const phone = require('../../resources/images/phone.jpg');
 
 const styles = {
   pageContainer: {

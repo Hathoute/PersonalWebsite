@@ -1,15 +1,19 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Typography from '@mui/material/Typography';
-import {Box, Button, Container, Toolbar} from '@mui/material';
+import {Box, Button, Container, createTheme, Toolbar} from '@mui/material';
+import {Link} from "react-router-dom";
 
-interface Props {
-  allTabs: Array<string>,
-  highlighted: string,
-  onSelect: (tab: string) => void,
+interface TabData {
+  name: string,
+  url: string,
 }
 
-function MyAppBar({ allTabs, highlighted, onSelect } : Props) {
+interface Props {
+  tabs: Array<TabData>,
+}
+
+function MyAppBar({ tabs } : Props) {
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
@@ -18,18 +22,19 @@ function MyAppBar({ allTabs, highlighted, onSelect } : Props) {
           variant="h6"
           noWrap
           component="div"
-          sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+          sx={{ flexGrow: 1, display: 'flex' }}
         >
-          MyPersonalBlog
+          Hamza Hathoute
         </Typography>
-        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-          {allTabs.map((tab) => (
+        <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'right' }}>
+          {tabs.map((tab) => (
             <Button
-              key={tab}
-              sx={{ my: 2, color: 'white', display: 'block', fontWeight: tab === highlighted ? 'bold' : 'normal' }}
-              onClick={() => onSelect(tab)}
+              key={tab.name}
+              sx={{ my: 2, color: 'white', display: 'block', fontWeight: 'bold' }}
+              component={Link}
+              to={tab.url}
             >
-              {tab}
+              {tab.name}
             </Button>
           ))}
         </Box>

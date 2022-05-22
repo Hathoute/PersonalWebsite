@@ -1,0 +1,66 @@
+{
+  "featured": [
+    {
+      "title": "Ringtone Manager",
+      "tools": "java,android-studio,sqlite",
+      "description": "My first Android app which manages ringtones with features like cropping, shuffling, etc",
+      "external": {
+        "iconId": "googleplay",
+        "name": "Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.hathoute.ringtonemanager.lite"
+      }
+    },
+    {
+      "title": "Wallpapers",
+      "tools": "java,android-studio,php,phpstorm,mysql",
+      "description": "An Android app that downloads wallpapers from a remote server.",
+      "external": {
+        "iconId": "github",
+        "name": "Github",
+        "url": "https://github.com/Hathoute/Wallpapers"
+      }
+    },
+    {
+      "title": "Wallpapers",
+      "tools": "java,android-studio,php,phpstorm,mysql",
+      "description": "An Android app that downloads wallpapers from a remote server.",
+      "external": {
+        "iconId": "github",
+        "name": "Github",
+        "url": "https://github.com/Hathoute/Wallpapers"
+      }
+    }
+  ],
+  "remaining": [
+    {
+      "title": "Wallpapers",
+      "tools": "java,android-studio,php,phpstorm,mysql",
+      "description": "An Android app that downloads wallpapers from a remote server.",
+      "external": {
+        "iconId": "github",
+        "name": "Github",
+        "url": "https://github.com/Hathoute/Wallpapers"
+      }
+    },
+    {
+      "title": "Wallpapers",
+      "tools": "java,android-studio,php,phpstorm,mysql",
+      "description": "An Android app that downloads wallpapers from a remote server.",
+      "external": {
+        "iconId": "github",
+        "name": "Github",
+        "url": "https://github.com/Hathoute/Wallpapers"
+      }
+    },
+    {
+      "title": "Wallpapers",
+      "tools": "java,android-studio,php,phpstorm,mysql",
+      "description": "An Android app that downloads wallpapers from a remote server.",
+      "external": {
+        "iconId": "github",
+        "name": "Github",
+        "url": "https://github.com/Hathoute/Wallpapers"
+      }
+    }
+  ]
+}
