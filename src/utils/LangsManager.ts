@@ -3,26 +3,20 @@ import {getLangJSON} from "./ResourcesManager";
 
 const supportedLanguages = ['en', 'fr'];
 const fallbackLanguage = 'en';
-let initialized = false;
-let langGetter: string, langSetter: (lang: string) => void;
 
-export function initializeLang(getter: string, setter: (lang: string) => void) {
-  if(supportedLanguages.indexOf(getter) === -1) {
-    setter(fallbackLanguage);
+let langData : { [key: string]: string } = {};
+let currentLang : string;
+function loadLangFile(lang: string) {
+  if(supportedLanguages.indexOf(lang) === -1) {
+    lang = fallbackLanguage;
   }
 
-  if(getter !== langGetter) {
-    langGetter = getter;
-    langSetter = setter;
-    loadLangFile();
+  if(lang === currentLang) {
+    return;
   }
 
-  initialized = true;
-}
-
-let langData : { [key: string]: string };
-function loadLangFile() {
-  const json = getLangJSON(langGetter + '.json');
+  currentLang = lang;
+  const json = getLangJSON(currentLang + '.json');
   langData = flattenObject(json);
 }
 
@@ -46,17 +40,17 @@ function flattenObject(object: Object) : {[key:string]:string} {
 
 }
 
-function ensureInitialized() {
-  if(!initialized) {
-    throw new Error("LangsManager must be initialized before calling any string method.")
+function ensureInitialized(lang: string) {
+  if(currentLang !== lang) {
+    loadLangFile(lang);
   }
 }
 
-export function getString(key: string) : string {
-  ensureInitialized();
+export function getString(key: string, lang: string) : string {
+  ensureInitialized(lang);
 
   if(langData![key] === undefined) {
-    return 'NOTFOUND_' + langGetter + '_' + key;
+    return 'NOTFOUND_' + currentLang + '_' + key;
   }
 
   return langData![key];

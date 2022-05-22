@@ -2,6 +2,8 @@ import * as React from 'react'
 import {Box, Typography} from "@mui/material";
 import {getString} from "../../utils/LangsManager";
 import {createLang} from "../../utils/ComponentFactory";
+import {useDispatch, useSelector} from "react-redux";
+import Store, {IRootState} from '../../redux/store';
 
 interface Props {
   identifier: string,
@@ -36,7 +38,9 @@ const styles = {
 };
 
 function Lang({identifier} : Props) {
-  return createLang(identifier);
+  const lang = useSelector((store: IRootState) => store.lang.lang);
+
+  return createLang(identifier, lang);
 }
 
 export default Lang;

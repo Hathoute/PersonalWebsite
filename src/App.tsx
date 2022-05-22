@@ -16,7 +16,6 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import HardSkills from "./containers/tools/HardSkills";
 import {initDataManager} from "./utils/DataManager";
 import About from "./containers/about/About";
-import {getString, initializeLang} from "./utils/LangsManager";
 
 
 const NavTabs = () => [
@@ -44,10 +43,6 @@ const theme = createTheme({
 let initialized = false;
 
 function App() {
-
-  let [currentLang, setCurrentLang] = useState('en');
-  initializeLang(currentLang, setCurrentLang);
-
   if(!initialized) {
     initDataManager();
     initialized = true;
