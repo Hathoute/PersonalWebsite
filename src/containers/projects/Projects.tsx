@@ -80,7 +80,7 @@ interface ExpandedProps {
 function ExpandedProjects({projects} : ExpandedProps) {
   return (
     <div>
-      <Typography sx={styles.subTitle}>Other Projects:</Typography>
+      <Typography sx={styles.subTitle}><Lang identifier="projects.other"/></Typography>
       {projects.map((p, i) => {
         return (
           [<Project

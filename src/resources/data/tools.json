@@ -9,7 +9,7 @@
     "identifier":"intellij",
     "fullName":"IntelliJ IDEA",
     "homeUrl":"https://www.jetbrains.com/idea/",
-    "icon":"si:intellij"
+    "icon":"si:intellijidea"
   },
   {
     "identifier":"pycharm",
@@ -66,6 +66,84 @@
     "icon":"si:mariadb"
   },
   {
+    "identifier":"react",
+    "fullName":"ReactJS",
+    "homeUrl":"https://www.reactjs.org/",
+    "icon":"si:react"
+  },
+  {
+    "identifier":"redux",
+    "fullName":"Redux",
+    "homeUrl":"https://redux.js.org/",
+    "icon":"si:redux"
+  },
+  {
+    "identifier":"arduino",
+    "fullName":"Arduino",
+    "homeUrl":"https://www.arduino.cc/",
+    "icon":"si:arduino"
+  },
+  {
+    "identifier":"css",
+    "fullName":"CSS",
+    "homeUrl":"https://developer.mozilla.org/docs/Web/CSS",
+    "icon":"si:css3"
+  },
+  {
+    "identifier":"django",
+    "fullName":"Django",
+    "homeUrl":"https://www.djangoproject.com/",
+    "icon":"si:django"
+  },
+  {
+    "identifier":"postgresql",
+    "fullName":"PostgreSQL",
+    "homeUrl":"https://www.postgresql.org/",
+    "icon":"si:postgresql"
+  },
+  {
+    "identifier":"pandas",
+    "fullName":"Pandas",
+    "homeUrl":"https://pandas.pydata.org/",
+    "icon":"si:pandas"
+  },
+  {
+    "identifier":"bluetooth",
+    "fullName":"Bluetooth",
+    "homeUrl":"https://www.bluetooth.com/",
+    "icon":"si:bluetooth"
+  },
+  {
+    "identifier":"linux",
+    "fullName":"Linux",
+    "homeUrl":"https://github.com/torvalds/linux",
+    "icon":"si:linux"
+  },
+  {
+    "identifier":"jupyter",
+    "fullName":"Jupyter Notebook",
+    "homeUrl":"https://jupyter.org/",
+    "icon":"si:jupyter"
+  },
+  {
+    "identifier":"html",
+    "fullName":"HTML",
+    "homeUrl":"https://developer.mozilla.org/en-US/docs/Web/HTML",
+    "icon":"si:html5"
+  },
+  {
+    "identifier":"qt",
+    "fullName":"Qt5",
+    "homeUrl":"https://www.qt.io/",
+    "icon":"si:qt"
+  },
+  {
+    "identifier":"hibernate",
+    "fullName":"Hibernate",
+    "homeUrl":"https://hibernate.org/",
+    "icon":"si:hibernate"
+  },
+  {
     "identifier":"java",
     "fullName":"Java",
     "homeUrl":"https://www.java.com/",
@@ -90,9 +168,45 @@
     "icon":"si:python"
   },
   {
-    "identifier":"react",
-    "fullName":"ReactJS",
-    "homeUrl":"https://www.reactjs.org/",
-    "icon":"si:react"
+    "identifier":"typescript",
+    "fullName":"TypeScript",
+    "homeUrl":"https://www.typescriptlang.org/",
+    "icon":"si:typescript"
+  },
+  {
+    "identifier":"javascript",
+    "fullName":"JavaScript",
+    "homeUrl":"https://developer.mozilla.org/docs/Web/JavaScript",
+    "icon":"si:javascript"
+  },
+  {
+    "identifier":"fortran",
+    "fullName":"Fortran",
+    "homeUrl":"https://fortran-lang.org/",
+    "icon":"si:fortran"
+  },
+  {
+    "identifier":"ada",
+    "fullName":"Ada",
+    "homeUrl":"https://www.adacore.com/",
+    "icon":"si:ada"
+  },
+  {
+    "identifier":"c",
+    "fullName":"C",
+    "homeUrl":"https://gcc.gnu.org/",
+    "icon":"si:c"
+  },
+  {
+    "identifier":"cpp",
+    "fullName":"C++",
+    "homeUrl":"https://gcc.gnu.org/",
+    "icon":"si:cplusplus"
+  },
+  {
+    "identifier":"matlab",
+    "fullName":"Matlab",
+    "homeUrl":"https://mathworks.com/products/matlab.html",
+    "icon":"si:matlab"
   }
 ]

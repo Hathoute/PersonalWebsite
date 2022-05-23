@@ -42,6 +42,7 @@
   "projects": {
     "title": "Project Showcase",
     "featured": "Featured Projects:",
+    "other": "Other Projects:",
     "ringtone_manager": {
       "title": "Ringtone Manager",
       "desc": "My first Android app which manages ringtones with features like cropping, shuffling, etc"

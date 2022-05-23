@@ -11,23 +11,23 @@
       }
     },
     {
-      "title": "projects.wallpapers.title",
-      "tools": "java,android-studio,php,phpstorm,mysql",
-      "description": "projects.wallpapers.desc",
+      "title": "projects.bacplus.title",
+      "tools": "java,android-studio,sqlite",
+      "description": "projects.bacplus.desc",
       "external": {
         "iconId": "github",
         "name": "common.github",
-        "url": "https://github.com/Hathoute/Wallpapers"
+        "url": "https://github.com/Hathoute/BacPlus"
       }
     },
     {
-      "title": "projects.wallpapers.title",
-      "tools": "java,android-studio,php,phpstorm,mysql",
-      "description": "projects.wallpapers.desc",
+      "title": "projects.ledcontroller.title",
+      "tools": "csharp,vs,arduino,bluetooth",
+      "description": "projects.ledcontroller.desc",
       "external": {
         "iconId": "github",
         "name": "common.github",
-        "url": "https://github.com/Hathoute/Wallpapers"
+        "url": "https://github.com/Hathoute/LEDController"
       }
     }
   ],
@@ -43,24 +43,99 @@
       }
     },
     {
-      "title": "projects.wallpapers.title",
-      "tools": "java,android-studio,php,phpstorm,mysql",
-      "description": "projects.wallpapers.desc",
+      "title": "projects.expromsites.title",
+      "tools": "python,django,pandas,javascript,css,html,postgresql,pycharm",
+      "description": "projects.expromsites.desc"
+    },
+    {
+      "title": "projects.stl.title",
+      "tools": "java,intellij",
+      "description": "projects.stl.desc",
       "external": {
         "iconId": "github",
         "name": "common.github",
-        "url": "https://github.com/Hathoute/Wallpapers"
+        "url": "https://github.com/Hathoute/stl-miniC"
       }
     },
     {
-      "title": "projects.wallpapers.title",
-      "tools": "java,android-studio,php,phpstorm,mysql",
-      "description": "projects.wallpapers.desc",
+      "title": "projects.n7scrap.title",
+      "tools": "python,javascript,pycharm",
+      "description": "projects.n7scrap.desc",
       "external": {
         "iconId": "github",
         "name": "common.github",
-        "url": "https://github.com/Hathoute/Wallpapers"
+        "url": "https://github.com/Hathoute/n7-marks-scrapper"
       }
+    },
+    {
+      "title": "projects.enseeiht.title",
+      "tools": "java,c,python,fortran,ada,matlab,linux,intellij,vscode,jupyter",
+      "description": "projects.enseeiht.desc",
+      "external": {
+        "iconId": "github",
+        "name": "common.github",
+        "url": "https://github.com/Hathoute/ENSEEIHT"
+      }
+    },
+    {
+      "title": "projects.n7linda.title",
+      "tools": "java,intellij",
+      "description": "projects.n7linda.desc",
+      "external": {
+        "iconId": "github",
+        "name": "common.github",
+        "url": "https://github.com/Hathoute/LindaProject"
+      }
+    },
+    {
+      "title": "projects.n7webapp.title",
+      "tools": "java,hibernate,intellij",
+      "description": "projects.n7webapp.desc",
+      "external": {
+        "iconId": "github",
+        "name": "common.github",
+        "url": "https://github.com/Hathoute/ProjetAppliWeb"
+      }
+    },
+    {
+      "title": "projects.spotifygui.title",
+      "tools": "csharp,vs",
+      "description": "projects.spotifygui.desc",
+      "external": {
+        "iconId": "github",
+        "name": "common.github",
+        "url": "https://github.com/Hathoute/SpotifyToolsGUI"
+      }
+    },
+    {
+      "title": "projects.easyrefactor.title",
+      "tools": "java,intellij",
+      "description": "projects.easyrefactor.desc",
+      "external": {
+        "iconId": "github",
+        "name": "common.github",
+        "url": "https://github.com/Hathoute/Easy-Refactor"
+      }
+    },
+    {
+      "title": "projects.personalweb.title",
+      "tools": "typescript,react,redux,css,webstorm",
+      "description": "projects.personalweb.desc"
+    },
+    {
+      "title": "projects.pathgame.title",
+      "tools": "csharp,unity,vs",
+      "description": "projects.pathgame.desc",
+      "external": {
+        "iconId": "googleplay",
+        "name": "common.googleplay",
+        "url": "https://play.google.com/store/apps/details?id=com.hathoute.pathway"
+      }
+    },
+    {
+      "title": "projects.launcher.title",
+      "tools": "cpp,qt",
+      "description": "projects.launcher.desc"
     }
   ]
 }

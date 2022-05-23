@@ -1,6 +1,80 @@
 {
-  "home": "Accueil",
-  "projects": "Projets",
-  "tools": "Outils",
-  "about": "A Propos"
+  "navbar": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "tools": "Compétences",
+    "about": "À-Propos"
+  },
+  "home": {
+    "hi_there": "Salut! Je suis Hamza HATHOUTE",
+    "welcome_website": "Bienvenue sur mon site personnel."
+  },
+  "academics": {
+    "title": "Études",
+    "enseeiht": {
+      "name": "ENSEEIHT Toulouse",
+      "period": "Septembre 2020 - Présent",
+      "desc": "Après les deux années en CPGE, j'ai été admis dans le département de science numérique de l'ENSEEIHT."
+    },
+    "cpge": {
+      "name": "CPGE Moulay Youssef",
+      "period": "Septembre 2018 - Juin 2020",
+      "desc": "J'ai choisi de terminer mes études en CPGE, car c'était le seul moyen pour intégrer une bonne école dans le domaine du numérique."
+    },
+    "bac": {
+      "name": "École Al Imaniat",
+      "period": "Septembre 2015 - Juin 2018",
+      "desc": "J'ai obtenu mon baccalauréat dans le domaine des sciences mathématiques, au Maroc."
+    }
+  },
+  "skills": {
+    "title": "Domaine",
+    "subtitle": "Développement logiciel",
+    "desktop": {
+      "title": "Développement Windows",
+      "desc": "J'ai développé de nombreux logiciels pour la plateforme Windows en utilisant des langages tels que C#, Python, C++ et avec des frameworks comme .NET et Qt5."
+    },
+    "mobile": {
+      "title": "Développement mobile",
+      "desc": "J'ai créé des applications mobiles pour la plateforme Android en utilisant Java comme langage principal."
+    }
+  },
+  "projects": {
+    "title": "Vitrine de projets",
+    "featured": "Projets en vedette:",
+    "other": "Autres projets:",
+    "ringtone_manager": {
+      "title": "Ringtone Manager",
+      "desc": "Ma première application Android qui gère les sonneries avec des fonctionnalités telles que du recadrage, du mélange, etc."
+    },
+    "wallpapers": {
+      "title": "Wallpapers",
+      "desc": "Une application Android qui télécharge des fonds d'écran à partir d'un serveur distant."
+    }
+  },
+  "tools": {
+    "title": "Compétences techniques",
+    "most_used": "Les plus utilisés:",
+    "used_in": "Utilisé dans"
+  },
+  "about": {
+    "title": "À Propos",
+    "me": {
+      "title": "Moi",
+      "content": "Je m'appelle Hamza Hathoute, j'ai 22 ans et je suis étudiant en formation d'ingénieur en développement logiciel.\nMa ville natale est Agadir - Maroc, mais je suis actuellement à Toulouse - France.\nJ'ai commencé à programmer il y a des années, créant essentiellement des mods pour Counter-Strike en utilisant #url{AMXX,https://www.amxmodx.org/} et #url{SourceMod,https://www.sourcemod.net/}."
+    },
+    "website": {
+      "title": "Ce site web",
+      "content": "Ce site Web a été créé en Mai 2022.\nLa seule raison de créer un tel site Web était d'apprendre #tool{react,17} et me familiariser avec le développement fullstack, puisque je cherchais un stage de fin d'année et que je ne trouvais que des stages de développement web."
+    }
+  },
+  "footer": "Créé en utilisant #tool{react,20}",
+  "common": {
+    "github": "Github",
+    "googleplay": "Google Play",
+    "more": "Plus",
+    "less": "Moins",
+    "view_all": "Voir tout"
+  }
+
 }
