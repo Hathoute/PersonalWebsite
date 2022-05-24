@@ -23,6 +23,22 @@ export function getProjects() : Projects {
   return cachedProjects!;
 }
 
+export interface CertificationData {
+  org: string,
+  obtained: string,
+  expiring: string,
+  name: string,
+}
+
+let cachedCertificates : CertificationData[] | undefined = undefined;
+export function getCertificates() : CertificationData[] {
+  if(cachedCertificates === undefined) {
+    cachedCertificates = getDataJSON('certifications.json');
+  }
+
+  return cachedCertificates!;
+}
+
 interface ToolData {
   identifier: string;
   fullName: string;

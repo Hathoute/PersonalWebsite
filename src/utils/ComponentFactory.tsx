@@ -121,7 +121,7 @@ export function createIconLink(iconId: string, size: number, url: string) {
 
 export function createLang(langId: string, lang: string) {
   const str = getString(langId, lang);
-  const regex = /(\#(\w+)\{(.+?)\})|(\\n)|(.+?)/g;
+  const regex = /(\#(\w+)\{(.+?)\})|(\n)|(.+?)/g;
   let rawComponents: Array<Object> = [""];
 
   let m;
