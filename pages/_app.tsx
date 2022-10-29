@@ -1,13 +1,16 @@
 import '../public/App.css';
 
 import {AppProps} from "next/app";
-import {Box, Container, createTheme, ThemeProvider} from "@mui/material";
-import {initDataManager} from "../src/utils/DataManager";
+import {Box, createTheme, ThemeProvider} from "@mui/material";
 import React, {useEffect, useState} from "react";
 import AppBar from "../src/components/AppBar/AppBar";
 import Footer from "../src/components/Footer/Footer";
 import Head from "next/head";
+import {wrapper} from "../src/redux/store"
+import {Provider} from "react-redux";
+import {initDataManager} from "../src/utils/DataManager";
 
+initDataManager();
 
 const NavTabs = () => [
   {name: 'navbar.home', url: '/'},
@@ -22,20 +25,16 @@ const theme = createTheme({
   },
 });
 
-let initialized = false;
+function MyApp({ Component, ...rest }: AppProps) {
+  const { store, props } = wrapper.useWrappedStore(rest);
+  const { pageProps } = props;
 
-export default function MyApp({ Component, pageProps }: AppProps) {
-  const [width, setWidth] = useState<number>(window.innerWidth);
+  const [width, setWidth] = useState<number>(9999);
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
   }
 
   useEffect(() => {
-    if(!initialized) {
-      initDataManager();
-      initialized = true;
-    }
-
     window.addEventListener('resize', handleWindowSizeChange);
     return () => {
       window.removeEventListener('resize', handleWindowSizeChange);
@@ -54,16 +53,21 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           <title>Hathoute - Personal Website</title>
         </Head>
 
+        <Provider store={store}>
         <ThemeProvider theme={theme}>
-            <AppBar
-                tabs={NavTabs()}
-            />
+          <AppBar
+              tabs={NavTabs()}
+          />
 
-            <Box style={{height: '100px'}}></Box>
+          <Component {...pageProps} />
 
-            <Footer />
+          <Box style={{height: '100px'}}></Box>
+
+          <Footer />
         </ThemeProvider>
-        <Component {...pageProps} />
+        </Provider>
       </div>
 )
 }
+
+export default MyApp;

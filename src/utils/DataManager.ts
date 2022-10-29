@@ -99,8 +99,17 @@ export function getOrderedToolUsage() : ToolUsage[] {
   return toolUsage;
 }
 
+//region Initialization
+let initialized = false;
+
 export function initDataManager() {
+  if(initialized) {
+    return;
+  }
+
   for (const tool of getTools()) {
     registerIcon(tool.icon);
   }
+  initialized = true;
 }
+//endregion

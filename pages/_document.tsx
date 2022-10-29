@@ -1,5 +1,4 @@
-import {Html, Main, NextScript} from "next/document";
-import Head from "next/head";
+import {Html, Main, NextScript, Head} from "next/document";
 
 export default function Document() {
   return (
@@ -15,7 +14,6 @@ export default function Document() {
           />
           <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png"/>
           <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
-          <title>React App</title>
         </Head>
         <body>
           <Main/>

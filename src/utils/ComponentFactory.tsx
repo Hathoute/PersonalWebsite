@@ -34,7 +34,7 @@ class CustomIconProvider implements IconProvider {
   private getIcon(size: number) : string {
     // If the icon is a svg, no scaling is needed
     if (this.type === 'svg') {
-      return require("../resources/icons/" + this.iconId + "/" + this.iconId + ".svg");
+      return require("../../public/resources/icons/" + this.iconId + "/" + this.iconId + ".svg");
     }
 
     // It is guaranteed that (this.sizes !== undefined) (constructor check...)
@@ -47,7 +47,7 @@ class CustomIconProvider implements IconProvider {
       selectedSize = sz;
     }
 
-    return require("../resources/icons/" + this.iconId + "/" + selectedSize + "px." + this.type);
+    return require("../../public/resources/icons/" + this.iconId + "/" + selectedSize + "px." + this.type);
   }
 
   generate(size: number): any {

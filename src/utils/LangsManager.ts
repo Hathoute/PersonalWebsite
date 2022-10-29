@@ -1,6 +1,5 @@
 import {getLangJSON} from "./ResourcesManager";
 
-
 const supportedLanguages = ['en', 'fr'];
 const fallbackLanguage = 'en';
 

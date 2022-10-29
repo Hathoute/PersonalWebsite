@@ -3,7 +3,7 @@ import {Box, Typography} from "@mui/material";
 import {getString} from "../../utils/LangsManager";
 import {createLang} from "../../utils/ComponentFactory";
 import {useDispatch, useSelector} from "react-redux";
-import Store, {IRootState} from '../../redux/store';
+import {IRootState} from '../../redux/store';
 
 interface Props {
   identifier: string,
