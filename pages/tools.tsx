@@ -1,3 +1,5 @@
 import HardSkills from "../src/containers/tools/HardSkills";
 
-export default () => <HardSkills expanded={true}/>
+export default function ToolsPage() {
+  return (<HardSkills expanded={true}/>);
+}

@@ -47,7 +47,7 @@ interface ToolData {
 }
 
 let cachedTools : ToolData[] | undefined = undefined;
-let toolsByIdentifier : Object | undefined = undefined;
+let toolsByIdentifier : {[identifier: string]: ToolData} | undefined = undefined;
 export function getTools() : ToolData[] {
   if (cachedTools === undefined) {
     cachedTools = getDataJSON('tools.json');
@@ -60,7 +60,7 @@ export function getToolData(identifier: string) : ToolData {
   if(toolsByIdentifier === undefined) {
     toolsByIdentifier = Object.assign({}, ...(getTools().map(x => ({[x.identifier]: x}))));
   }
-  let data = toolsByIdentifier![identifier as keyof typeof toolsByIdentifier];
+  let data = toolsByIdentifier![identifier];
   if(data === undefined) {
     throw new Error("Identifier " + identifier + " is not bound to any tool.");
   }

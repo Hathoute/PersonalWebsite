@@ -1,7 +1,7 @@
 import '../public/App.css';
 
 import {AppProps} from "next/app";
-import {Box, createTheme, ThemeProvider} from "@mui/material";
+import {Box, Container, createTheme, ThemeProvider} from "@mui/material";
 import React, {useEffect, useState} from "react";
 import AppBar from "../src/components/AppBar/AppBar";
 import Footer from "../src/components/Footer/Footer";
@@ -59,7 +59,9 @@ function MyApp({ Component, ...rest }: AppProps) {
               tabs={NavTabs()}
           />
 
-          <Component {...pageProps} />
+          <Container maxWidth='xl'>
+            <Component {...pageProps} />
+          </Container>
 
           <Box style={{height: '100px'}}></Box>
 
