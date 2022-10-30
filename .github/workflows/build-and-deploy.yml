@@ -62,3 +62,4 @@ jobs:
           rm -r * 2> /dev/null
           shopt -u dotglob
           ssh staging sudo /usr/sbin/service nginx restart
+          EOF
