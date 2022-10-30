@@ -15,7 +15,7 @@ jobs:
       - run: npm ci
       - run: npm run build
       - name: Export Next.js app to static HTML
-        run: next export
+        run: npm run export
 
       - name: Configure SSH
         env:
