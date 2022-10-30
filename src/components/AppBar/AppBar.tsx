@@ -1,8 +1,8 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Typography from '@mui/material/Typography';
-import {Box, Button, Container, createTheme, Toolbar} from '@mui/material';
-import {Link} from "react-router-dom";
+import {Box, Button, Container, Toolbar} from '@mui/material';
+import Link from 'next/link'
 import Lang from "../Lang/Lang";
 import {getIcon} from "../../utils/ResourcesManager";
 import {useDispatch} from "react-redux";
@@ -48,7 +48,7 @@ function MyAppBar({ tabs } : Props) {
               key={tab.name}
               sx={{ my: 2, color: 'white', display: 'block', fontWeight: 'bold' }}
               component={Link}
-              to={tab.url}
+              href={tab.url}
             >
               <Lang identifier={tab.name}/>
             </Button>

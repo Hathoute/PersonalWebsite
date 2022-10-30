@@ -1,13 +1,10 @@
 import * as React from "react"
-import TextBanner from "../../components/TextBanner/TextBanner";
-import Experience from "../../components/Text/Experience";
-import {Box, Button, Divider, Typography} from "@mui/material";
-import Project from "../../components/Text/Project";
-import {Link} from "react-router-dom";
-import {getOrderedToolUsage, ProjectData, ToolUsage} from "../../utils/DataManager";
+import {Box, Button, Typography} from "@mui/material";
+import {getOrderedToolUsage, ToolUsage} from "../../utils/DataManager";
 import Skill from "../../components/Text/Skill";
 import {Section, SectionElement} from "../../components/Section/Section";
 import Lang from "../../components/Lang/Lang";
+import Link from 'next/link'
 
 interface Props {
   expanded: boolean;
@@ -92,7 +89,7 @@ function HardSkills({expanded} : Props) {
       </Section>
 
       { !expanded &&
-          <Button variant='outlined' component={Link} to="/tools">
+          <Button variant='outlined' component={Link} href="/tools">
               <Lang identifier="common.view_all"/>
           </Button>
       }

@@ -1,9 +1,7 @@
 import * as React from "react"
-import TextBanner from "../../components/TextBanner/TextBanner";
-import Experience from "../../components/Text/Experience";
-import {Box, Button, Divider, Typography} from "@mui/material";
+import {Box, Button, Typography} from "@mui/material";
 import Project from "../../components/Text/Project";
-import {Link} from "react-router-dom";
+import Link from 'next/link'
 import {getProjects, ProjectData} from "../../utils/DataManager";
 import Lang from "../../components/Lang/Lang";
 
@@ -61,7 +59,7 @@ function Projects({expanded} : Props) {
       })}
 
       { !expanded &&
-          <Button variant='outlined' component={Link} to="/projects">
+          <Button variant='outlined' component={Link} href="/projects">
               <Lang identifier="common.view_all"/>
           </Button>
       ||

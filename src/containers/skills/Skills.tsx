@@ -5,9 +5,6 @@ import {Box, Divider, Typography} from "@mui/material";
 import {Section, SectionElement} from "../../components/Section/Section";
 import Lang from "../../components/Lang/Lang";
 
-const laptop = require('../../resources/images/laptop.jpg');
-const phone = require('../../resources/images/phone.jpg');
-
 const styles = {
   pageContainer: {
     backgroundColor: 'black',
@@ -65,7 +62,7 @@ function Skills() {
 
       <Section color={styles.pageContainer.backgroundColor}>
         <SectionElement>
-          <img src={laptop} style={styles.image}/>
+          <img src='/resources/images/laptop.jpg' style={styles.image}/>
         </SectionElement>
         <SectionElement>
           <Box sx={styles.sectionContainer}>
@@ -83,7 +80,7 @@ function Skills() {
           </Box>
         </SectionElement>
         <SectionElement>
-          <img src={phone} style={styles.image}/>
+          <img src='/resources/images/phone.jpg' style={styles.image}/>
         </SectionElement>
       </Section>
 

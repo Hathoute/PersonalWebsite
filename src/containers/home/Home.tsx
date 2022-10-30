@@ -4,12 +4,9 @@ import {getString} from "../../utils/LangsManager";
 
 
 function Home() {
-
-    let url = require('../../resources/images/code_background.jpg');
-
     return (
       <TextBanner
-        imgData= {{imgUrl: url, width:'100%', height:'400px'}}
+        imgData= {{imgUrl: '/resources/images/code_background.jpg', width:'100%', height:'400px'}}
         title="home.hi_there"
         description="home.welcome_website"
         color="white"

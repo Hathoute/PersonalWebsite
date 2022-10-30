@@ -1,0 +1,66 @@
+name: build-and-deploy
+run-name: Building and deploying the website to remote server
+on:
+  push:
+    branches: [ master ]
+env:
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+      - run: npm ci
+      - run: npm run build
+      - name: Export Next.js app to static HTML
+        run: next export
+
+      - name: Configure SSH
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$SSH_KEY" > ~/.ssh/staging.key
+          chmod 600 ~/.ssh/staging.key
+          cat >>~/.ssh/config << EOF
+          Host staging
+          HostName $SSH_HOST
+          User $SSH_USER
+          IdentityFile ~/.ssh/staging.key
+          StrictHostKeyChecking no
+          EOF
+      - name: Clean previous files
+        run: |
+          ssh staging /bin/bash << EOF
+          mkdir -p $DEPLOYMENT_DIR
+          cd $DEPLOYMENT_DIR
+          shopt -s dotglob
+          rm -r * 2> /dev/null
+          shopt -u dotglob
+          (exit 0)
+          EOF
+      - name: Copy new deployment files
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+        run: |
+          shopt -s dotglob
+          scp -i ~/.ssh/staging.key ./.github/deployment/* ./out/* $SSH_USER@$SSH_HOST:$DEPLOYMENT_DIR
+          shopt -u dotglob
+      - name: Restart nginx
+        run: ssh staging sudo /usr/sbin/service nginx restart
+      - name: Restart nginx on failure
+        if: ${{ failure() }}
+        run: |
+          ssh staging /bin/bash << EOF
+          cd $DEPLOYMENT_DIR
+          shopt -s dotglob
+          rm -r * 2> /dev/null
+          shopt -u dotglob
+          ssh staging sudo /usr/sbin/service nginx restart
