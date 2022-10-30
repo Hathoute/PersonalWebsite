@@ -53,8 +53,10 @@ jobs:
           shopt -s dotglob
           scp -rp -i ~/.ssh/staging.key ./.github/deployment/* ./out/* $SSH_USER@$SSH_HOST:$DEPLOYMENT_DIR
           shopt -u dotglob
-      - name: Restart nginx
-        run: ssh staging sudo /usr/sbin/service nginx restart
+      - name: Process nginx configuration and restart nginx
+        run: ssh staging /bin/bash << EOF
+          ~/scripts/process-nginx-conf.sh $DEPLOYMENT_DIR/nginx.conf
+          sudo /usr/sbin/service nginx restart
       - name: Restart nginx on failure
         if: ${{ failure() }}
         run: |
