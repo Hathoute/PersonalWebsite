@@ -3,6 +3,8 @@ run-name: Building and deploying the website to remote server
 on:
   push:
     branches: [ master ]
+env:
+  DEPLOYMENT_DIR: ~/deployed-apps/hathoute/personal-website
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -62,4 +64,5 @@ jobs:
           rm -r * 2> /dev/null
           shopt -u dotglob
           ssh staging sudo /usr/sbin/service nginx restart
+          EOF
           EOF
