@@ -51,7 +51,7 @@ jobs:
           SSH_USER: ${{ secrets.SSH_USER }}
         run: |
           shopt -s dotglob
-          scp -i ~/.ssh/staging.key ./.github/deployment/* ./out/* $SSH_USER@$SSH_HOST:$DEPLOYMENT_DIR
+          scp -rp -i ~/.ssh/staging.key ./.github/deployment/* ./out/* $SSH_USER@$SSH_HOST:$DEPLOYMENT_DIR
           shopt -u dotglob
       - name: Restart nginx
         run: ssh staging sudo /usr/sbin/service nginx restart
