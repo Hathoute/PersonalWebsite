@@ -208,5 +208,47 @@
     "fullName":"Matlab",
     "homeUrl":"https://mathworks.com/products/matlab.html",
     "icon":"si:matlab"
+  },
+  {
+    "identifier":"golang",
+    "fullName":"Go",
+    "homeUrl":"https://go.dev/",
+    "icon":"si:go"
+  },
+  {
+    "identifier":"docker",
+    "fullName":"Docker",
+    "homeUrl":"https://www.docker.com/",
+    "icon":"si:docker"
+  },
+  {
+    "identifier":"kubernetes",
+    "fullName":"Kubernetes",
+    "homeUrl":"https://kubernetes.io/",
+    "icon":"si:kubernetes"
+  },
+  {
+    "identifier":"mongodb",
+    "fullName":"MongoDB",
+    "homeUrl":"https://www.mongodb.com/",
+    "icon":"si:mongodb"
+  },
+  {
+    "identifier":"mongodb",
+    "fullName":"MongoDB",
+    "homeUrl":"https://www.mongodb.com/",
+    "icon":"si:mongodb"
+  },
+  {
+    "identifier":"grafana",
+    "fullName":"Grafana",
+    "homeUrl":"https://www.grafana.com/",
+    "icon":"si:grafana"
+  },
+  {
+    "identifier":"nextjs",
+    "fullName":"Next.js",
+    "homeUrl":"https://nextjs.org/",
+    "icon":"si:nextdotjs"
   }
 ]

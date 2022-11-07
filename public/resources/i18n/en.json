@@ -102,6 +102,18 @@
     "bacplus": {
       "title": "BacPlus",
       "desc": "Educational android app with school subjects, videos and previous exams."
+    },
+    "modbus": {
+      "title": "Modbus RTU Server",
+      "desc": "A server application capable of communicating with a serial port that converts RS485"
+    },
+    "modbus_grafana": {
+      "title": "Modbus datasource plugin",
+      "desc": "A grafana data-source backend plugin used to monitor metrics for Modbus"
+    },
+    "disruptive_backup": {
+      "title": "Disruptive backup",
+      "desc": "Web server to save disruptive realtime/historical data"
     }
   },
   "tools": {

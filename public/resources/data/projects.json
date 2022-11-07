@@ -1,16 +1,6 @@
 {
   "featured": [
     {
-      "title": "projects.ringtone_manager.title",
-      "tools": "java,android-studio,sqlite",
-      "description": "projects.ringtone_manager.desc",
-      "external": {
-        "iconId": "googleplay",
-        "name": "common.googleplay",
-        "url": "https://play.google.com/store/apps/details?id=com.hathoute.ringtonemanager.lite"
-      }
-    },
-    {
       "title": "projects.bacplus.title",
       "tools": "java,android-studio,sqlite",
       "description": "projects.bacplus.desc",
@@ -21,17 +11,57 @@
       }
     },
     {
-      "title": "projects.ledcontroller.title",
-      "tools": "csharp,vs,arduino,bluetooth",
-      "description": "projects.ledcontroller.desc",
+      "title": "projects.modbus.title",
+      "tools": "java,intellij,docker,kubernetes,mysql",
+      "description": "projects.modbus.desc",
       "external": {
         "iconId": "github",
         "name": "common.github",
-        "url": "https://github.com/Hathoute/LEDController"
+        "url": "https://github.com/Hathoute/exprom-modbus-server"
+      }
+    },
+    {
+      "title": "projects.personalweb.title",
+      "tools": "typescript,react,nextjs,redux,css,webstorm",
+      "description": "projects.personalweb.desc",
+      "external": {
+        "iconId": "github",
+        "name": "common.github",
+        "url": "https://github.com/Hathoute/PersonalWebsite"
       }
     }
   ],
   "remaining": [
+    {
+      "title": "projects.modbus_grafana.title",
+      "tools": "typescript,golang,react,grafana,mysql,intellij",
+      "description": "projects.modbus_grafana.desc",
+      "external": {
+        "iconId": "github",
+        "name": "common.github",
+        "url": "https://github.com/Hathoute/exprom-modbus-datasource-plugin"
+      }
+    },
+    {
+      "title": "projects.disruptive_backup.title",
+      "tools": "python,mongodb,pycharm",
+      "description": "projects.disruptive_backup.desc",
+      "external": {
+        "iconId": "github",
+        "name": "common.github",
+        "url": "https://github.com/Hathoute/exprom-disruptive-backup"
+      }
+    },
+    {
+      "title": "projects.ringtone_manager.title",
+      "tools": "java,android-studio,sqlite",
+      "description": "projects.ringtone_manager.desc",
+      "external": {
+        "iconId": "googleplay",
+        "name": "common.googleplay",
+        "url": "https://play.google.com/store/apps/details?id=com.hathoute.ringtonemanager.lite"
+      }
+    },
     {
       "title": "projects.wallpapers.title",
       "tools": "java,android-studio,php,phpstorm,mysql",
@@ -40,6 +70,16 @@
         "iconId": "github",
         "name": "common.github",
         "url": "https://github.com/Hathoute/Wallpapers"
+      }
+    },
+    {
+      "title": "projects.ledcontroller.title",
+      "tools": "csharp,vs,arduino,bluetooth",
+      "description": "projects.ledcontroller.desc",
+      "external": {
+        "iconId": "github",
+        "name": "common.github",
+        "url": "https://github.com/Hathoute/LEDController"
       }
     },
     {
@@ -116,11 +156,6 @@
         "name": "common.github",
         "url": "https://github.com/Hathoute/Easy-Refactor"
       }
-    },
-    {
-      "title": "projects.personalweb.title",
-      "tools": "typescript,react,redux,css,webstorm",
-      "description": "projects.personalweb.desc"
     },
     {
       "title": "projects.pathgame.title",
