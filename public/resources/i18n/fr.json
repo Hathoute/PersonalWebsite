@@ -119,7 +119,15 @@
   "tools": {
     "title": "Compétences techniques",
     "most_used": "Les plus utilisés:",
-    "used_in": "Utilisé dans"
+    "used_in": "Utilisé dans",
+    "type": {
+      "name": "Type",
+      "all": "Tous",
+      "language": "Langage de programmation",
+      "database": "Base de données",
+      "ide": "Environnement de développement",
+      "other": "Autre"
+    }
   },
   "about": {
     "title": "À Propos",

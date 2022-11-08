@@ -119,7 +119,15 @@
   "tools": {
     "title": "Hard skills",
     "most_used": "Most used:",
-    "used_in": "Used in"
+    "used_in": "Used in",
+    "type": {
+      "name": "Type",
+      "all": "All",
+      "language": "Programming Language",
+      "database": "Database",
+      "ide": "IDE",
+      "other": "Other"
+    }
   },
   "about": {
     "title": "About",

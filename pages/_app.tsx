@@ -23,6 +23,31 @@ const theme = createTheme({
   typography: {
     fontFamily: '\'JetBrains Mono\', Arial',
   },
+  components: {
+    MuiSelect: {
+      styleOverrides: {
+        outlined: {
+          color: "#1976d2",
+          border: "1px solid #1976d2"
+        },
+      }
+    },
+    MuiInputLabel: {
+      styleOverrides: {
+        outlined: {
+          color: "#1976d2"
+        },
+      }
+    },
+    MuiMenu: {
+      styleOverrides: {
+        list: {
+          backgroundColor: "#124c86",
+          color: "white"
+        },
+      }
+    },
+  }
 });
 
 function MyApp({ Component, ...rest }: AppProps) {

@@ -3,252 +3,287 @@
     "identifier":"jetbrains",
     "fullName":"JetBrains",
     "homeUrl":"https://www.jetbrains.com/",
-    "icon":"si:jetbrains"
+    "icon":"si:jetbrains",
+    "type": "other"
   },
   {
     "identifier":"intellij",
     "fullName":"IntelliJ IDEA",
     "homeUrl":"https://www.jetbrains.com/idea/",
-    "icon":"si:intellijidea"
+    "icon":"si:intellijidea",
+    "type": "ide"
   },
   {
     "identifier":"pycharm",
     "fullName":"PyCharm",
     "homeUrl":"https://www.jetbrains.com/pycharm/",
-    "icon":"si:pycharm"
+    "icon":"si:pycharm",
+    "type": "ide"
   },
   {
     "identifier":"phpstorm",
     "fullName":"PhpStorm",
     "homeUrl":"https://www.jetbrains.com/phpstorm/",
-    "icon":"si:phpstorm"
+    "icon":"si:phpstorm",
+    "type": "ide"
   },
   {
     "identifier":"webstorm",
     "fullName":"WebStorm",
     "homeUrl":"https://www.jetbrains.com/webstorm/",
-    "icon":"si:webstorm"
+    "icon":"si:webstorm",
+    "type": "ide"
   },
   {
     "identifier":"vs",
     "fullName":"Visual Studio",
     "homeUrl":"https://visualstudio.microsoft.com/",
-    "icon":"si:visualstudio"
+    "icon":"si:visualstudio",
+    "type": "ide"
   },
   {
     "identifier":"vscode",
     "fullName":"Visual Studio Code",
     "homeUrl":"https://code.visualstudio.com/",
-    "icon":"si:visualstudiocode"
+    "icon":"si:visualstudiocode",
+    "type": "ide"
   },
   {
     "identifier":"android-studio",
     "fullName":"Android Studio",
     "homeUrl":"https://developer.android.com/studio",
-    "icon":"si:androidstudio"
+    "icon":"si:androidstudio",
+    "type": "ide"
   },
   {
     "identifier":"unity",
     "fullName":"Unity",
     "homeUrl":"https://unity.com/",
-    "icon":"si:unity"
+    "icon":"si:unity",
+    "type": "ide"
   },
   {
     "identifier":"sqlite",
     "fullName":"SQLite",
     "homeUrl":"https://www.sqlite.org/index.html",
-    "icon":"si:sqlite"
+    "icon":"si:sqlite",
+    "type": "database"
   },
   {
     "identifier":"mysql",
     "fullName":"MariaDB",
     "homeUrl":"https://mariadb.org/",
-    "icon":"si:mariadb"
+    "icon":"si:mariadb",
+    "type": "database"
   },
   {
     "identifier":"react",
     "fullName":"ReactJS",
     "homeUrl":"https://www.reactjs.org/",
-    "icon":"si:react"
+    "icon":"si:react",
+    "type": "other"
   },
   {
     "identifier":"redux",
     "fullName":"Redux",
     "homeUrl":"https://redux.js.org/",
-    "icon":"si:redux"
+    "icon":"si:redux",
+    "type": "other"
   },
   {
     "identifier":"arduino",
     "fullName":"Arduino",
     "homeUrl":"https://www.arduino.cc/",
-    "icon":"si:arduino"
+    "icon":"si:arduino",
+    "type": "ide"
   },
   {
     "identifier":"css",
     "fullName":"CSS",
     "homeUrl":"https://developer.mozilla.org/docs/Web/CSS",
-    "icon":"si:css3"
+    "icon":"si:css3",
+    "type": "other"
   },
   {
     "identifier":"django",
     "fullName":"Django",
     "homeUrl":"https://www.djangoproject.com/",
-    "icon":"si:django"
+    "icon":"si:django",
+    "type": "other"
   },
   {
     "identifier":"postgresql",
     "fullName":"PostgreSQL",
     "homeUrl":"https://www.postgresql.org/",
-    "icon":"si:postgresql"
+    "icon":"si:postgresql",
+    "type": "database"
   },
   {
     "identifier":"pandas",
     "fullName":"Pandas",
     "homeUrl":"https://pandas.pydata.org/",
-    "icon":"si:pandas"
+    "icon":"si:pandas",
+    "type": "other"
   },
   {
     "identifier":"bluetooth",
     "fullName":"Bluetooth",
     "homeUrl":"https://www.bluetooth.com/",
-    "icon":"si:bluetooth"
+    "icon":"si:bluetooth",
+    "type": "other"
   },
   {
     "identifier":"linux",
     "fullName":"Linux",
     "homeUrl":"https://github.com/torvalds/linux",
-    "icon":"si:linux"
+    "icon":"si:linux",
+    "type": "other"
   },
   {
     "identifier":"jupyter",
     "fullName":"Jupyter Notebook",
     "homeUrl":"https://jupyter.org/",
-    "icon":"si:jupyter"
+    "icon":"si:jupyter",
+    "type": "other"
   },
   {
     "identifier":"html",
     "fullName":"HTML",
     "homeUrl":"https://developer.mozilla.org/en-US/docs/Web/HTML",
-    "icon":"si:html5"
+    "icon":"si:html5",
+    "type": "other"
   },
   {
     "identifier":"qt",
     "fullName":"Qt5",
     "homeUrl":"https://www.qt.io/",
-    "icon":"si:qt"
+    "icon":"si:qt",
+    "type": "other"
   },
   {
     "identifier":"hibernate",
     "fullName":"Hibernate",
     "homeUrl":"https://hibernate.org/",
-    "icon":"si:hibernate"
+    "icon":"si:hibernate",
+    "type": "other"
   },
   {
     "identifier":"java",
     "fullName":"Java",
     "homeUrl":"https://www.java.com/",
-    "icon":"si:java"
+    "icon":"si:java",
+    "type": "language"
   },
   {
     "identifier":"csharp",
     "fullName":"C#",
     "homeUrl":"https://docs.microsoft.com/dotnet/csharp/",
-    "icon":"si:csharp"
+    "icon":"si:csharp",
+    "type": "language"
   },
   {
     "identifier":"php",
     "fullName":"PHP",
     "homeUrl":"https://www.php.net/",
-    "icon":"si:php"
+    "icon":"si:php",
+    "type": "language"
   },
   {
     "identifier":"python",
     "fullName":"Python",
     "homeUrl":"https://www.python.org/",
-    "icon":"si:python"
+    "icon":"si:python",
+    "type": "language"
   },
   {
     "identifier":"typescript",
     "fullName":"TypeScript",
     "homeUrl":"https://www.typescriptlang.org/",
-    "icon":"si:typescript"
+    "icon":"si:typescript",
+    "type": "language"
   },
   {
     "identifier":"javascript",
     "fullName":"JavaScript",
     "homeUrl":"https://developer.mozilla.org/docs/Web/JavaScript",
-    "icon":"si:javascript"
+    "icon":"si:javascript",
+    "type": "language"
   },
   {
     "identifier":"fortran",
     "fullName":"Fortran",
     "homeUrl":"https://fortran-lang.org/",
-    "icon":"si:fortran"
+    "icon":"si:fortran",
+    "type": "language"
   },
   {
     "identifier":"ada",
     "fullName":"Ada",
     "homeUrl":"https://www.adacore.com/",
-    "icon":"si:ada"
+    "icon":"si:ada",
+    "type": "language"
   },
   {
     "identifier":"c",
     "fullName":"C",
     "homeUrl":"https://gcc.gnu.org/",
-    "icon":"si:c"
+    "icon":"si:c",
+    "type": "language"
   },
   {
     "identifier":"cpp",
     "fullName":"C++",
     "homeUrl":"https://gcc.gnu.org/",
-    "icon":"si:cplusplus"
+    "icon":"si:cplusplus",
+    "type": "language"
   },
   {
     "identifier":"matlab",
     "fullName":"Matlab",
     "homeUrl":"https://mathworks.com/products/matlab.html",
-    "icon":"si:matlab"
+    "icon":"si:matlab",
+    "type": "language"
   },
   {
     "identifier":"golang",
     "fullName":"Go",
     "homeUrl":"https://go.dev/",
-    "icon":"si:go"
+    "icon":"si:go",
+    "type": "language"
   },
   {
     "identifier":"docker",
     "fullName":"Docker",
     "homeUrl":"https://www.docker.com/",
-    "icon":"si:docker"
+    "icon":"si:docker",
+    "type": "other"
   },
   {
     "identifier":"kubernetes",
     "fullName":"Kubernetes",
     "homeUrl":"https://kubernetes.io/",
-    "icon":"si:kubernetes"
+    "icon":"si:kubernetes",
+    "type": "other"
   },
   {
     "identifier":"mongodb",
     "fullName":"MongoDB",
     "homeUrl":"https://www.mongodb.com/",
-    "icon":"si:mongodb"
-  },
-  {
-    "identifier":"mongodb",
-    "fullName":"MongoDB",
-    "homeUrl":"https://www.mongodb.com/",
-    "icon":"si:mongodb"
+    "icon":"si:mongodb",
+    "type": "database"
   },
   {
     "identifier":"grafana",
     "fullName":"Grafana",
     "homeUrl":"https://www.grafana.com/",
-    "icon":"si:grafana"
+    "icon":"si:grafana",
+    "type": "other"
   },
   {
     "identifier":"nextjs",
     "fullName":"Next.js",
     "homeUrl":"https://nextjs.org/",
-    "icon":"si:nextdotjs"
+    "icon":"si:nextdotjs",
+    "type": "other"
   }
 ]

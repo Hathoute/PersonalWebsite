@@ -14,6 +14,9 @@ const styles = {
     fontSize: 20,
     fontWeight: 'bold',
   },
+  subsubtitle: {
+    fontSize: 14,
+  },
   subtitle: {
     fontSize: 18,
     fontWeight: 'medium',
@@ -52,6 +55,7 @@ function Skill({usage} : Props) {
           usage.data.homeUrl
         )}
       </Box>
+      <Typography sx={styles.subsubtitle}><Lang identifier={"tools.type." + usage.data.type}/></Typography>
       <Typography sx={styles.subtitle}><Lang identifier="tools.used_in"/></Typography>
 
       <Box sx={styles.projectsContainer}>

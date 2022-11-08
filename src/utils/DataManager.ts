@@ -39,11 +39,17 @@ export function getCertificates() : CertificationData[] {
   return cachedCertificates!;
 }
 
+export type ToolType = "language" | "ide" | "database" | "other";
+export function getAllToolTypes() : ToolType[] {
+  return ["language", "database", "ide", "other"];
+}
+
 interface ToolData {
   identifier: string;
   fullName: string;
   homeUrl: string;
   icon: string;
+  type: ToolType;
 }
 
 let cachedTools : ToolData[] | undefined = undefined;

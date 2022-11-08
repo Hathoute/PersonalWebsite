@@ -1,10 +1,11 @@
 import * as React from "react"
-import {Box, Button, Typography} from "@mui/material";
-import {getOrderedToolUsage, ToolUsage} from "../../utils/DataManager";
+import {Box, Button, FormControl, InputLabel, MenuItem, Select, Typography} from "@mui/material";
+import {getAllToolTypes, getOrderedToolUsage, ToolType, ToolUsage} from "../../utils/DataManager";
 import Skill from "../../components/Text/Skill";
 import {Section, SectionElement} from "../../components/Section/Section";
 import Lang from "../../components/Lang/Lang";
 import Link from 'next/link'
+import {useEffect, useState} from "react";
 
 interface Props {
   expanded: boolean;
@@ -40,14 +41,24 @@ function HardSkills({expanded} : Props) {
 
   const usages = getOrderedToolUsage();
   const maxFeatured = 3;
-  let splitted : ToolUsage[][] = [[], [], []];
 
-  for (let i = 0; i < usages.length; i++) {
-    if(!expanded && i >= maxFeatured)
-      break;
+  const types = getAllToolTypes();
+  const [selectedType, setSelectedType] = useState<ToolType | "all">("all");
+  const [splitted, setSplitted] = useState<ToolUsage[][]>([[], [], []])
 
-    splitted[i%3].push(usages[i]);
-  }
+  useEffect(() => {
+    const temp = [[], [], []];
+    const filteredTools = usages.filter(tu => selectedType === "all" || selectedType === tu.data.type);
+    for (let i = 0; i < filteredTools.length; i++) {
+      if(!expanded && i >= maxFeatured)
+        break;
+
+      temp[i%3].push(filteredTools[i]);
+    }
+
+    setSplitted(temp);
+  }, [selectedType]);
+
 
   return (
     <div style={styles.pageContainer}>
@@ -57,6 +68,22 @@ function HardSkills({expanded} : Props) {
       </Box>
 
       {!expanded && <Typography sx={styles.subTitle}><Lang identifier="tools.most_used"/></Typography>}
+
+      <FormControl>
+        <InputLabel id="select-label"><Lang identifier="tools.type.name"/></InputLabel>
+        <Select
+            labelId="select-label"
+            value={selectedType}
+            label="Age"
+            variant='outlined'
+            onChange={v => setSelectedType(v.target.value as ToolType)}
+        >
+          <MenuItem value={"all"}><Lang identifier={"tools.type.all"}/></MenuItem>
+          {types.map(type => (
+              <MenuItem key={type} value={type}><Lang identifier={"tools.type." + type}/></MenuItem>
+          ))}
+        </Select>
+      </FormControl>
 
       <Section color='black'>
         <SectionElement>
